@@ -11,11 +11,11 @@ android {
 
 dependencies {
 
-   // implementation project(":config")
-  //  implementation project(":core")
+    implementation project(":config")
+    implementation project(":core")
 
-    implementation 'com.tgus:core:1.0.0'
-    implementation 'com.tgus:config:1.0.0'
+  //  implementation 'com.tgus:core:1.0.0'
+  //  implementation 'com.tgus:config:1.0.0'
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.0'
