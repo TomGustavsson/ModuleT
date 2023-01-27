@@ -19,10 +19,17 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
+//groupId project.group
+//				artifactId project.name
+//				version project.version
+//				from components.java
 afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
+                groupId project.group
+                artifactId project.name
+                version project.version
                 from components.release
             }
         }
