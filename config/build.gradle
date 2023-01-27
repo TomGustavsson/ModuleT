@@ -19,10 +19,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-//groupId project.group
-//				artifactId project.name
-//				version project.version
-//				from components.java
 afterEvaluate {
     publishing {
         publications {
@@ -35,14 +31,3 @@ afterEvaluate {
         }
     }
 }
-/*afterEvaluate {
-    android.libraryVariants.each {variant ->
-        publishing.publications.create(variant.name, MavenPublication) {
-            from components.findByName(variant.name)
-
-            groupId='com.tgus'
-            artifactId ="config"
-            version='1.0.0'
-        }
-    }
-} */

@@ -32,14 +32,3 @@ afterEvaluate {
         }
     }
 }
-/*afterEvaluate {
-    android.libraryVariants.each {variant ->
-        publishing.publications.create(variant.name, MavenPublication) {
-            from components.findByName(variant.name)
-
-            groupId='com.tgus'
-            artifactId ="core"
-            version='1.0.0'
-        } //com.tgus:cloud:1.0.0
-    }
-}*/

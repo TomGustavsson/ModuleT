@@ -11,14 +11,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.tgus.modulet.ui.theme.ModuleTTheme
-import com.tgus.storage.StorageManager
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val test = StorageManager()
-        test.initStorageManager("tgiw")
         setContent {
             ModuleTTheme {
                 // A surface container using the 'background' color from the theme

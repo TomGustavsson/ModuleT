@@ -14,9 +14,6 @@ dependencies {
     implementation project(":config")
     implementation project(":core")
 
-  //  implementation 'com.tgus:core:1.0.0'
-  //  implementation 'com.tgus:config:1.0.0'
-
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.0'
     implementation 'com.google.android.material:material:1.7.0'
@@ -38,15 +35,3 @@ afterEvaluate {
         }
     }
 }
-/* afterEvaluate {
-
-    android.libraryVariants.each {variant ->
-        publishing.publications.create(variant.name, MavenPublication) {
-            from components.findByName(variant.name)
-
-            groupId='com.tgus'
-            artifactId ="cloud"
-            version='1.0.0'
-        } //com.tgus:cloud:1.0.0
-    }
-} */
